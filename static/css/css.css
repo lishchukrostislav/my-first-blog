@@ -1,0 +1,50 @@
+body{
+    min-width: 320px;
+    font-size: 14px;
+    color: #626262;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    color: #b4ad9e;
+}
+
+a:hover{
+    color: #898377
+}
+
+header .navbar-light{
+    background-color: #fff;
+}
+
+header .navbar-brand{
+    font-size:30px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+header .nav-item{
+    text-transform: uppercase;
+    margin-left:50px;
+}
+
+container{
+    font-size:30px;
+    color: #000;
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+
+
+

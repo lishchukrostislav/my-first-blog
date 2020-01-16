@@ -1,0 +1,37 @@
+{% extends 'basic.html' %}
+
+{% block menu %}
+<header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Математик</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Главная<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Учебная</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            {% if menu_uch %}
+                                {% for a in menu_uch %}
+                                    <a class="dropdown-item" href="{{a.slug}}">{{a.name}}</a>
+                                {% endfor %}
+                            {% else %}
+                                Варианты отсутствуют )=
+                            {% endif %}
+                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_me">Обо мне<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+{% endblock %}
+
