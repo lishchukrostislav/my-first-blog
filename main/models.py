@@ -79,11 +79,3 @@ class link_uch(models.Model):
     class Meta:
         verbose_name = 'Ссылка_Меню'
         verbose_name_plural = 'Ссылки_Меню'
-
-class Caruosel(models.Model):
-    img = models.ImageField('Картинка', upload_to='C:/Users/lishu/Desktop/Проект/static/images/')
-    number = models.IntegerField('Номер слайда')
-    class Meta:
-        verbose_name = 'Слайд в слайдер'
-        verbose_name_plural = 'Слайды в слайдер'
-
