@@ -25,7 +25,7 @@ SECRET_KEY = 'dha5-f#7y_%-@1#7*td93p@ly+v#01@x6@tk$(amhe^1m1=g()'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['djangotest.pythonanywhere.com']
 
 
 # Application definition
@@ -122,7 +122,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS =[
     '/home/Rostislaw/rostislaw.pythonanywhere.com/static'
-]
+] 
+STATIC_ROOT= os.path.join(os.path.dirname(__file__), 'static')
 MEDIA_ROOT = os.path.join(os.path.dirname(__file__), 'media')
 MEDIA_URL = '/media/'
 
