@@ -121,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS =[
-    'C:/Users/lishu/Desktop/project/static'
+    '/home/Rostislaw/rostislaw.pythonanywhere.com/static'
 ]
 MEDIA_ROOT = os.path.join(os.path.dirname(__file__), 'media')
 MEDIA_URL = '/media/'
