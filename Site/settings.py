@@ -123,7 +123,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT =  [ BASE_DIR  +  'static' ]
 
 STATICFILES_DIRS =  [
-    home/MathematicsTeacher/staticfiles'
+    /home/MathematicsTeacher/mathematicsteacher.pythonanywhere.com/staticfiles/
 ]
 
 MEDIA_ROOT = os.path.join(os.path.dirname(__file__), 'media')
