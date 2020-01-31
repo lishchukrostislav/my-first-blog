@@ -25,7 +25,7 @@ SECRET_KEY = 'dha5-f#7y_%-@1#7*td93p@ly+v#01@x6@tk$(amhe^1m1=g()'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [*]
+ALLOWED_HOSTS = ['mathematicsteacher.pythonanywhere.com']
 
 
 # Application definition
