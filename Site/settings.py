@@ -122,7 +122,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT =  [ BASE_DIR  +  'static' ]
 
-STATICFILES_DIRS =  [ BASE_DIR  +  'staticfiles' ]
+STATICFILES_DIRS =  [/home/MathematicsTeacher/staticfiles]
 
 MEDIA_ROOT = os.path.join(os.path.dirname(__file__), 'media')
 MEDIA_URL = '/media/'
