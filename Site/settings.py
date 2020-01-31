@@ -122,9 +122,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT =  [ BASE_DIR  +  'static' ]
 
-STATICFILES_DIRS =  [
-    /home/MathematicsTeacher/mathematicsteacher.pythonanywhere.com/staticfiles
-]
+STATICFILES_DIRS =  os.path.join(os.path.dirname(__file__), 'staticfiles')
+STATICFILES_URL = '/staticfiles/'
 
 MEDIA_ROOT = os.path.join(os.path.dirname(__file__), 'media')
 MEDIA_URL = '/media/'
